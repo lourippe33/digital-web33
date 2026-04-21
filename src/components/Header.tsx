@@ -67,6 +67,9 @@ export const Header = () => {
           <button
             className="md:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Menu de navigation"
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-nav"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -74,7 +77,7 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4">
+          <nav id="mobile-nav" className="md:hidden mt-4 pb-4 flex flex-col gap-4">
             <button onClick={() => scrollToSection("accueil")} className="text-foreground hover:text-primary transition-colors text-left">
               Accueil
             </button>
