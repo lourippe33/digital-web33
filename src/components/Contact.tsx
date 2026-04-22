@@ -243,7 +243,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Téléphone</h4>
-                    <a href="tel:+33612345678" className="text-primary hover:underline">
+                    <a href="tel:+33782386621" className="text-primary hover:underline">
                       07 82 38 66 21
                     </a>
                   </div>

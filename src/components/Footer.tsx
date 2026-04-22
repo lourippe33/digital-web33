@@ -39,16 +39,40 @@ export const Footer = () => {
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "18:00"
+        "opens": "09:30",
+        "closes": "17:30"
       },
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61568067626665",
         "https://www.instagram.com/digital.web33/",
         "https://www.linkedin.com/in/%C3%A9ric-gata-225786336/"
       ],
-      "priceRange": "€€",
-      "description": "Création de sites web professionnels pour praticiens du bien-être à Bordeaux et en Gironde"
+      "priceRange": "€",
+      "description": "Création de sites web professionnels pour praticiens du bien-être à Bordeaux et en Gironde. Sophrologues, hypnothérapeutes, naturopathes, coachs. Sites clé en main à partir de 390€, livrés en 14 jours.",
+      "areaServed": [
+        { "@type": "City", "name": "Bordeaux" },
+        { "@type": "City", "name": "Mérignac" },
+        { "@type": "City", "name": "Pessac" },
+        { "@type": "City", "name": "Talence" },
+        { "@type": "City", "name": "Tresses" },
+        { "@type": "City", "name": "Bègles" },
+        { "@type": "City", "name": "Gradignan" },
+        { "@type": "City", "name": "Villenave-d'Ornon" },
+        { "@type": "AdministrativeArea", "name": "Gironde" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Création de sites web pour praticiens bien-être",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Site web clé en main 5 pages" },
+            "price": "390",
+            "priceCurrency": "EUR"
+          }
+        ]
+      },
+      "knowsAbout": ["Sophrologie", "Hypnothérapie", "Naturopathie", "Coaching bien-être", "SEO local", "Création de site web"]
     });
     document.head.appendChild(script);
 
