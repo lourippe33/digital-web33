@@ -89,6 +89,8 @@ export const Chatbot = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-2xl z-50 hover:scale-110 transition-transform duration-300"
         size="icon"
+        aria-label={isOpen ? "Fermer le chat" : "Ouvrir l'assistant virtuel"}
+        aria-expanded={isOpen}
       >
         {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
       </Button>
