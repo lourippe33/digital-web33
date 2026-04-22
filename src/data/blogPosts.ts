@@ -701,4 +701,229 @@ Les premiers résultats SEO local apparaissent généralement dans les 2 à 4 mo
 <p><a href="https://digital-web33.fr/contact">Contactez Digital-web33</a> pour un échange sans engagement sur votre situation et la stratégie la plus adaptée à votre activité en Gironde.</p>
     `,
   },
+  {
+    id: 5,
+    slug: "combien-coute-site-web-praticien-bien-etre-2026",
+    title: "Combien coûte vraiment un site web pour praticien bien-être en 2026 ?",
+    excerpt: "WordPress, abonnement mensuel, agence web ou freelance spécialisé ? Tour d'horizon complet des prix réels pour un site professionnel de sophrologue, hypnothérapeute ou naturopathe en 2026 — avec les coûts cachés que personne ne vous dit.",
+    category: "TARIFS",
+    image: new URL("@/assets/cout-site-web-praticien-bien-etre.webp", import.meta.url).href,
+    date: "22 avril 2026",
+    content: `
+<p>Vous êtes sophrologue à Bordeaux, hypnothérapeute à Mérignac ou naturopathe à Pessac, et vous cherchez à créer votre site web professionnel. La première question qui vient naturellement : <strong>combien ça va me coûter ?</strong> La réponse est rarement simple, car derrière chaque tarif affiché se cachent des coûts que la plupart des prestataires ne mentionnent pas d'emblée. Dans cet article, je vous donne une vision complète et honnête du marché en 2026.</p>
+
+<h2>Les 5 options pour créer votre site web en tant que praticien bien-être</h2>
+
+<p>En 2026, un praticien bien-être en Gironde a concrètement cinq grandes options pour créer sa présence en ligne. Chacune a ses avantages, ses inconvénients, et surtout ses coûts réels — pas seulement le prix affiché.</p>
+
+<h2>Option 1 : Le site en abonnement mensuel (Wix, Squarespace, BAKIPY…)</h2>
+
+<p>Des plateformes comme Wix, Squarespace, ou des solutions spécialisées comme BAKIPY proposent des sites à partir de <strong>15 à 50€ par mois</strong>. En apparence, c'est la solution la moins chère. En réalité, c'est souvent la plus coûteuse sur la durée.</p>
+
+<ul>
+  <li><strong>Coût réel sur 3 ans</strong> : 540€ à 1 800€ selon la formule</li>
+  <li><strong>Vous n'êtes jamais propriétaire</strong> de votre site — si vous arrêtez de payer, votre site disparaît</li>
+  <li><strong>SEO limité</strong> : ces plateformes génèrent des codes peu optimisés, difficiles à faire remonter sur Google</li>
+  <li><strong>Dépendance totale</strong> : si la plateforme augmente ses tarifs ou ferme, vous repartez de zéro</li>
+</ul>
+
+<p>La formule BAKIPY spécialisée sophrologue est par exemple à <strong>50€/mois</strong> — soit 600€ la première année, 1 200€ sur deux ans. Sans jamais posséder votre site.</p>
+
+<h2>Option 2 : Le site WordPress en autonomie</h2>
+
+<p>WordPress est gratuit, mais créer et maintenir un site professionnel seul représente un coût réel en temps et en argent :</p>
+
+<ul>
+  <li><strong>Hébergement</strong> : 5 à 15€/mois selon la qualité</li>
+  <li><strong>Thème premium</strong> : 50 à 200€ (achat unique)</li>
+  <li><strong>Plugins essentiels</strong> (SEO, sécurité, formulaires, cache) : 100 à 300€/an</li>
+  <li><strong>Nom de domaine</strong> : 15€/an</li>
+  <li><strong>Votre temps</strong> : 20 à 50 heures pour créer le site, plus la maintenance régulière</li>
+</ul>
+
+<p>Total réaliste première année : <strong>400 à 700€ + votre temps</strong>. Et si vous n'êtes pas à l'aise avec la technique, chaque mise à jour peut devenir une source de stress. WordPress est une excellente solution pour les profils technophiles — moins adaptée aux praticiens dont le cœur de métier n'est pas le web.</p>
+
+<h2>Option 3 : L'agence web généraliste à Bordeaux</h2>
+
+<p>Les agences web bordelaises proposent des sites vitrines professionnels, mais leurs tarifs s'adressent principalement aux entreprises avec un budget marketing conséquent :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type de prestation</th>
+      <th>Tarif moyen 2026</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Site vitrine 5 pages (entrée de gamme)</td>
+      <td>1 800€ – 2 500€ HT</td>
+    </tr>
+    <tr>
+      <td>Site vitrine avec SEO de base</td>
+      <td>2 500€ – 4 500€ HT</td>
+    </tr>
+    <tr>
+      <td>Maintenance mensuelle</td>
+      <td>50€ – 300€/mois</td>
+    </tr>
+    <tr>
+      <td>Modifications post-livraison</td>
+      <td>80€ – 150€/heure</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Pour un sophrologue ou un hypnothérapeute qui démarre son activité, investir 2 000€ à 4 500€ dans un site web est rarement justifié à ce stade. Ces agences travaillent bien, mais elles ne sont pas spécialisées dans les contraintes spécifiques des praticiens bien-être.</p>
+
+<h2>Option 4 : L'agence spécialisée praticiens bien-être</h2>
+
+<p>Des agences comme Un Coup d'Avance ont développé des offres ciblées pour les praticiens bien-être :</p>
+
+<ul>
+  <li><strong>Formule essentielle</strong> : à partir de 1 490€ HT</li>
+  <li><strong>Formule avec SEO local</strong> : à partir de 1 990€ HT</li>
+  <li><strong>Maintenance</strong> : souvent facturée en supplément</li>
+</ul>
+
+<p>Ces offres sont de qualité et adaptées au secteur. Mais pour un praticien qui démarre ou qui cherche à maîtriser son budget, le ticket d'entrée reste élevé.</p>
+
+<h2>Option 5 : Le freelance local spécialisé bien-être (Digital-web33)</h2>
+
+<p>C'est l'option que je propose, et je vais être transparent sur ce qu'elle comprend :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ce qui est inclus</th>
+      <th>Valeur marché</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Site 5 pages professionnel (design sur mesure)</td>
+      <td>800€ – 1 200€</td>
+    </tr>
+    <tr>
+      <td>1 article de blog optimisé SEO</td>
+      <td>150€ – 300€</td>
+    </tr>
+    <tr>
+      <td>SEO local (pages par ville, Google Business)</td>
+      <td>200€ – 500€</td>
+    </tr>
+    <tr>
+      <td>Micro-formation pour gérer votre site</td>
+      <td>100€ – 200€</td>
+    </tr>
+    <tr>
+      <td>Assistant IA 24h/24 pour vos visiteurs</td>
+      <td>100€ – 300€</td>
+    </tr>
+    <tr>
+      <td><strong>Prix Digital-web33</strong></td>
+      <td><strong>390€ tout compris</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Vous êtes <strong>100% propriétaire</strong> de votre site. Aucun abonnement obligatoire. Après livraison, votre seul coût récurrent est le nom de domaine (~15€/an).</p>
+
+<h2>Comparatif sur 3 ans : ce que vous payez vraiment</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Solution</th>
+      <th>An 1</th>
+      <th>An 2</th>
+      <th>An 3</th>
+      <th>Total 3 ans</th>
+      <th>Propriétaire ?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BAKIPY (50€/mois)</td>
+      <td>600€</td>
+      <td>600€</td>
+      <td>600€</td>
+      <td><strong>1 800€</strong></td>
+      <td>❌ Non</td>
+    </tr>
+    <tr>
+      <td>WordPress DIY</td>
+      <td>500€ + temps</td>
+      <td>200€ + temps</td>
+      <td>200€ + temps</td>
+      <td><strong>900€ + votre temps</strong></td>
+      <td>✅ Oui</td>
+    </tr>
+    <tr>
+      <td>Agence spécialisée</td>
+      <td>1 490€+</td>
+      <td>150€</td>
+      <td>150€</td>
+      <td><strong>1 790€+</strong></td>
+      <td>✅ Oui</td>
+    </tr>
+    <tr>
+      <td>Agence Bordeaux</td>
+      <td>2 500€+</td>
+      <td>150€+</td>
+      <td>150€+</td>
+      <td><strong>2 800€+</strong></td>
+      <td>✅ Oui</td>
+    </tr>
+    <tr>
+      <td><strong>Digital-web33</strong></td>
+      <td><strong>405€</strong></td>
+      <td><strong>15€</strong></td>
+      <td><strong>15€</strong></td>
+      <td><strong>435€</strong></td>
+      <td>✅ Oui</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Les coûts cachés que personne ne vous dit</h2>
+
+<ul>
+  <li><strong>La refonte dans 2 ans</strong> : un site WordPress mal maintenu nécessite souvent une refonte complète (500€ à 2 000€)</li>
+  <li><strong>Les mises à jour de sécurité</strong> : sans maintenance, WordPress est vulnérable — les cleanings après hack coûtent 200€ à 800€</li>
+  <li><strong>Votre temps</strong> : chaque heure passée à gérer votre site est une heure de moins pour vos patients. À votre taux horaire, la différence peut dépasser 1 000€/an</li>
+  <li><strong>La migration</strong> : quitter une plateforme d'abonnement nécessite souvent de recréer entièrement votre site — avec perte de l'historique SEO</li>
+</ul>
+
+<h2>Quelle solution choisir selon votre situation ?</h2>
+
+<ul>
+  <li><strong>Vous démarrez votre activité</strong> : priorité à la rapidité, au SEO local, et à la maîtrise du budget — Digital-web33 ou agence spécialisée.</li>
+  <li><strong>Vous êtes à l'aise avec la technique</strong> : WordPress DIY reste une bonne option si vous acceptez d'y consacrer du temps.</li>
+  <li><strong>Vous avez un budget &gt;1 500€</strong> : une agence spécialisée praticiens bien-être vous offrira un accompagnement plus complet.</li>
+  <li><strong>Évitez les abonnements mensuels</strong> : vous ne serez jamais propriétaire, et le coût sur 3 ans dépasse largement les alternatives.</li>
+</ul>
+
+<h2>Questions fréquentes sur le prix d'un site web pour praticien bien-être</h2>
+
+<p><strong>Est-ce qu'un site à 390€ est vraiment professionnel ?</strong><br>
+Oui. Le prix reflète une spécialisation (je travaille uniquement avec des praticiens bien-être) et l'absence de structure d'agence lourde. Vous pouvez consulter les <a href="/#portfolio">exemples de réalisations</a> directement sur ce site.</p>
+
+<p><strong>Y a-t-il des coûts supplémentaires après la livraison ?</strong><br>
+Uniquement le nom de domaine (~15€/an). L'hébergement est inclus via Netlify (gratuit). Dans la majorité des cas, aucun coût récurrent obligatoire.</p>
+
+<p><strong>Combien coûte la maintenance d'un site bien-être ?</strong><br>
+Vous recevez une micro-formation pour gérer vous-même les mises à jour de contenu. Pour les modifications techniques, comptez 50€ à 150€ selon la demande — mais la plupart des praticiens n'en ont pas besoin la première année.</p>
+
+<p><strong>Mon site sera-t-il bien référencé sur Google à Bordeaux ?</strong><br>
+Le SEO local est intégré dès la création : pages optimisées par ville et spécialité, structure technique correcte, intégration Google Business. Les premiers résultats apparaissent généralement 4 à 8 semaines après la mise en ligne.</p>
+
+<p><strong>Puis-je ajouter un blog ou des pages supplémentaires ?</strong><br>
+Un article de blog est inclus dans la formule de base. Des pages supplémentaires peuvent être ajoutées selon votre projet, à discuter au moment du devis.</p>
+
+<p>Pour aller plus loin : <a href="/blog/referencement-local-praticien-bien-etre-bordeaux">notre guide complet sur le référencement local à Bordeaux</a> et <a href="/blog/site-web-sophrologue-hypnotherapeute-bordeaux">ce que doit contenir votre site web de praticien</a> pour attirer des clients dès les premières semaines.</p>
+
+<p><a href="/#contact">Demandez un devis gratuit à Digital-web33</a> — je vous réponds sous 24h avec une estimation précise selon votre projet et votre spécialité en Gironde.</p>
+    `,
+  },
 ];
