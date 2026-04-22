@@ -1,14 +1,6 @@
-import type { Handler } from "@netlify/functions";
+const rateLimitMap = new Map();
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "Content-Type",
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
-};
-
-const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
-
-function checkRateLimit(ip: string): boolean {
+function checkRateLimit(ip) {
   const now = Date.now();
   const limit = 20;
   const windowMs = 24 * 60 * 60 * 1000;
@@ -21,6 +13,12 @@ function checkRateLimit(ip: string): boolean {
   record.count++;
   return true;
 }
+
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+};
 
 const systemPrompt = `Vous êtes l'assistant virtuel de Digital-web33, une entreprise spécialisée dans la création de sites web professionnels pour les praticiens du bien-être, thérapeutes et coachs.
 
@@ -59,10 +57,9 @@ const systemPrompt = `Vous êtes l'assistant virtuel de Digital-web33, une entre
 
 ⚠️ Limites : si la question est hors web, répondre : "Je suis là pour vous aider uniquement sur la création de sites web et l'accompagnement Digital-web33. 😊"
 
-📞 Orienter vers Contact quand : devis demandé, projet mentionné, prêt à avancer.
-Formulation naturelle en fin de réponse, ton rassurant.`;
+📞 Orienter vers Contact quand : devis demandé, projet mentionné, prêt à avancer. Formulation naturelle en fin de réponse, ton rassurant.`;
 
-export const handler: Handler = async (event) => {
+exports.handler = async function (event) {
   if (event.httpMethod === "OPTIONS") {
     return { statusCode: 204, headers: corsHeaders, body: "" };
   }
@@ -71,7 +68,7 @@ export const handler: Handler = async (event) => {
     return { statusCode: 405, headers: corsHeaders, body: "Method Not Allowed" };
   }
 
-  const ip = event.headers["x-forwarded-for"]?.split(",")[0] || "unknown";
+  const ip = (event.headers["x-forwarded-for"] || "").split(",")[0] || "unknown";
   if (!checkRateLimit(ip)) {
     return {
       statusCode: 429,
@@ -92,7 +89,7 @@ export const handler: Handler = async (event) => {
   try {
     const { messages } = JSON.parse(event.body || "{}");
 
-    const contents = messages.map((m: { role: string; content: string }) => ({
+    const contents = messages.map((m) => ({
       role: m.role === "assistant" ? "model" : "user",
       parts: [{ text: m.content }],
     }));
@@ -111,8 +108,8 @@ export const handler: Handler = async (event) => {
     );
 
     if (!response.ok) {
-      const err = await response.json();
-      console.error("Gemini error:", err);
+      const err = await response.text();
+      console.error("Gemini error:", response.status, err);
       return {
         statusCode: 500,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
@@ -121,7 +118,7 @@ export const handler: Handler = async (event) => {
     }
 
     const data = await response.json();
-    const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+    const text = (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts && data.candidates[0].content.parts[0] && data.candidates[0].content.parts[0].text) || "";
 
     return {
       statusCode: 200,
