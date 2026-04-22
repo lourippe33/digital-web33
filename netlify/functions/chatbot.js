@@ -113,7 +113,7 @@ exports.handler = async function (event) {
       return {
         statusCode: 500,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
-        body: JSON.stringify({ error: `Gemini ${response.status}: ${err.slice(0, 200)}` }),
+        body: JSON.stringify({ error: "Erreur lors de la communication avec l'assistant." }),
       };
     }
 
@@ -130,7 +130,7 @@ exports.handler = async function (event) {
     return {
       statusCode: 500,
       headers: { ...corsHeaders, "Content-Type": "application/json" },
-      body: JSON.stringify({ error: `Erreur: ${e.message}` }),
+      body: JSON.stringify({ error: "Désolé, une erreur s'est produite. Veuillez réessayer." }),
     };
   }
 };
