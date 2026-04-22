@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { Stats } from "@/components/Stats";
 import { Services } from "@/components/Services";
 import { Portfolio } from "@/components/Portfolio";
 import { IncludedFeatures } from "@/components/IncludedFeatures";
@@ -31,7 +32,8 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        
+        <Stats />
+
         {/* SEO Content Section */}
         <section className="py-12 bg-background">
           <div className="container mx-auto px-4">

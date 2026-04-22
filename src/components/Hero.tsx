@@ -1,9 +1,51 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-image.jpg";
-import { useEffect } from "react";
-export const Hero = () => {
+import { useEffect, useState } from "react";
+
+const SPECIALTIES = [
+  "sophrologues",
+  "hypnothérapeutes",
+  "naturopathes",
+  "coachs",
+  "énergéticiens",
+  "praticiens EFT",
+  "thérapeutes",
+];
+
+const useTypewriter = (words: string[], typingSpeed = 80, deletingSpeed = 40, pauseMs = 1800) => {
+  const [displayed, setDisplayed] = useState("");
+  const [wordIndex, setWordIndex] = useState(0);
+  const [phase, setPhase] = useState<"typing" | "pausing" | "deleting">("typing");
+
   useEffect(() => {
-    // Add hero image structured data
+    const word = words[wordIndex];
+    if (phase === "typing") {
+      if (displayed.length < word.length) {
+        const t = setTimeout(() => setDisplayed(word.slice(0, displayed.length + 1)), typingSpeed);
+        return () => clearTimeout(t);
+      } else {
+        const t = setTimeout(() => setPhase("deleting"), pauseMs);
+        return () => clearTimeout(t);
+      }
+    }
+    if (phase === "deleting") {
+      if (displayed.length > 0) {
+        const t = setTimeout(() => setDisplayed(displayed.slice(0, -1)), deletingSpeed);
+        return () => clearTimeout(t);
+      } else {
+        setWordIndex((i) => (i + 1) % words.length);
+        setPhase("typing");
+      }
+    }
+  }, [displayed, phase, wordIndex, words, typingSpeed, deletingSpeed, pauseMs]);
+
+  return displayed;
+};
+
+export const Hero = () => {
+  const specialty = useTypewriter(SPECIALTIES);
+
+  useEffect(() => {
     const img = document.querySelector('meta[property="og:image"]');
     if (!img) {
       const meta = document.createElement('meta');
@@ -46,7 +88,11 @@ export const Hero = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight animate-fade-in" style={{
           textShadow: '0 4px 12px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3)'
         }}>
-            Création de sites web professionnels pour praticiens du bien-être à Bordeaux
+            Sites web professionnels<br />
+            <span className="text-primary">pour{" "}
+              <span className="inline-block min-w-[2ch]">{specialty}</span>
+              <span className="animate-pulse">|</span>
+            </span>
           </h1>
           
           <p className="text-lg md:text-xl text-white/95 max-w-3xl mx-auto leading-relaxed" style={{
