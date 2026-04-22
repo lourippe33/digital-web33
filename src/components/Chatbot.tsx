@@ -37,117 +37,30 @@ export const Chatbot = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch(
-        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chatbot`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
-          },
-          body: JSON.stringify({ messages: newMessages }),
-        }
-      );
+      const response = await fetch("/.netlify/functions/chatbot", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: newMessages }),
+      });
+
+      const data = await response.json();
 
       if (!response.ok) {
-        let errorMsg = "Échec de la connexion avec l'assistant";
-        try {
-          const errData = await response.json();
-          if (response.status === 429) errorMsg = "Le service est temporairement saturé. Veuillez réessayer dans quelques instants.";
-          else if (response.status === 402) errorMsg = "Service temporairement indisponible. Veuillez réessayer plus tard.";
-          else if (errData?.error) errorMsg = errData.error;
-        } catch {}
+        let errorMsg = "Désolé, une erreur s'est produite. Veuillez réessayer.";
+        if (response.status === 429) errorMsg = data.error || "Limite journalière atteinte. Revenez demain ! 😊";
+        else if (data?.error) errorMsg = data.error;
         throw new Error(errorMsg);
       }
-      if (!response.body) throw new Error("Échec de la connexion avec l'assistant");
 
-      const reader = response.body.getReader();
-      const decoder = new TextDecoder();
-      let textBuffer = "";
-      let streamDone = false;
-      let assistantContent = "";
-
-      // Add empty assistant message that we'll update
-      setMessages((prev) => [...prev, { role: "assistant", content: "" }]);
-
-      while (!streamDone) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        
-        textBuffer += decoder.decode(value, { stream: true });
-
-        let newlineIndex: number;
-        while ((newlineIndex = textBuffer.indexOf("\n")) !== -1) {
-          let line = textBuffer.slice(0, newlineIndex);
-          textBuffer = textBuffer.slice(newlineIndex + 1);
-
-          if (line.endsWith("\r")) line = line.slice(0, -1);
-          if (line.startsWith(":") || line.trim() === "") continue;
-          if (!line.startsWith("data: ")) continue;
-
-          const jsonStr = line.slice(6).trim();
-          if (jsonStr === "[DONE]") {
-            streamDone = true;
-            break;
-          }
-
-          try {
-            const parsed = JSON.parse(jsonStr);
-            const content = parsed.choices?.[0]?.delta?.content as string | undefined;
-            if (content) {
-              assistantContent += content;
-              setMessages((prev) => {
-                const newMessages = [...prev];
-                newMessages[newMessages.length - 1] = {
-                  role: "assistant",
-                  content: assistantContent,
-                };
-                return newMessages;
-              });
-            }
-          } catch {
-            textBuffer = line + "\n" + textBuffer;
-            break;
-          }
-        }
-      }
-
-      // Flush remaining buffer
-      if (textBuffer.trim()) {
-        for (let raw of textBuffer.split("\n")) {
-          if (!raw) continue;
-          if (raw.endsWith("\r")) raw = raw.slice(0, -1);
-          if (raw.startsWith(":") || raw.trim() === "") continue;
-          if (!raw.startsWith("data: ")) continue;
-          const jsonStr = raw.slice(6).trim();
-          if (jsonStr === "[DONE]") continue;
-          try {
-            const parsed = JSON.parse(jsonStr);
-            const content = parsed.choices?.[0]?.delta?.content as string | undefined;
-            if (content) {
-              assistantContent += content;
-              setMessages((prev) => {
-                const newMessages = [...prev];
-                newMessages[newMessages.length - 1] = {
-                  role: "assistant",
-                  content: assistantContent,
-                };
-                return newMessages;
-              });
-            }
-          } catch {
-            /* ignore partial leftovers */
-          }
-        }
-      }
-    } catch (error) {
-      if (import.meta.env.DEV) console.error("Chat error:", error);
       setMessages((prev) => [
-        ...prev.slice(0, -1),
-        {
-          role: "assistant",
-          content: "Désolé, une erreur s'est produite. Veuillez réessayer.",
-        },
+        ...prev,
+        { role: "assistant", content: data.content },
+      ]);
+    } catch (error) {
+      const msg = error instanceof Error ? error.message : "Désolé, une erreur s'est produite. Veuillez réessayer.";
+      setMessages((prev) => [
+        ...prev,
+        { role: "assistant", content: msg },
       ]);
     } finally {
       setIsLoading(false);
