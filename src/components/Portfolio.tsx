@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import neurofeedbackImg from "@/assets/site-web-neurofeedback-bordeaux.webp";
-import insulaImg from "@/assets/site-web-hypnotherapeute-gironde.webp";
+import agpAppImg from "@/assets/appli agp.png";
 import methodesImg from "@/assets/site-web-therapies-alternatives-bordeaux.webp";
 import pertePoidsImg from "@/assets/site-web-programme-gestion-poids.webp";
 import sophroImg from "@/assets/site-web-sophrologue-bordeaux.webp";
@@ -13,7 +13,7 @@ import ariaImg from "@/assets/site-web-bienetre-premium-bordeaux.webp";
 const projects = [
   { url: "https://neurofeedback-stress.fr/", category: "Bien-être", image: neurofeedbackImg, alt: "Site web praticien neurofeedback Tresses Bordeaux - Digital-web33" },
   { url: "https://sophrobordeaux.lovable.app", category: "Sophrologie", image: sophroImg, alt: "Site web sophrologue Bordeaux - Digital-web33" },
-  { url: "https://insula-hypnose.fr/", category: "Hypnose", image: insulaImg, alt: "Site web hypnothérapeute Gironde - Digital-web33" },
+  { url: "https://appli.programme-agp.fr/", category: "Appli Minceur", image: agpAppImg, alt: "Application Programme Minceur AGP 30 Jours - Digital-web33" },
   { url: "https://hypnosebordeaux.lovable.app", category: "Hypnose", image: hypnoImg, alt: "Site web hypnothérapeute Mérignac - Digital-web33" },
   { url: "https://sophie-laurent-naturopathe.lovable.app", category: "Naturopathie", image: naturoImg, alt: "Site web naturopathe Pessac - Digital-web33" },
   { url: "https://www.methodes-douces-bordeaux.fr/", category: "Thérapies", image: methodesImg, alt: "Site web thérapies alternatives Bordeaux - Digital-web33" },
