@@ -144,7 +144,7 @@ Non. Instagram et Facebook vous donnent de la visibilité auprès de votre commu
 
 <p>Pour aller plus loin, découvrez <a href="/blog/site-web-sophrologue-hypnotherapeute-bordeaux">ce qu'un site web professionnel doit contenir pour un praticien bien-être</a> et comment <a href="/blog/google-business-praticien-bien-etre-gironde">optimiser votre fiche Google Business en Gironde</a>.</p>
 
-<p><a href="https://digital-web33.fr/contact">Contactez Digital-web33</a> pour un audit SEO local de votre site et la mise en place d'une stratégie adaptée à votre pratique et votre zone géographique en Gironde.</p>
+<p><a href="/#contact">Contactez Digital-web33</a> pour un audit SEO local de votre site et la mise en place d'une stratégie adaptée à votre pratique et votre zone géographique en Gironde.</p>
     `,
   },
   {
@@ -313,7 +313,7 @@ Votre site sera accessible dans le monde entier, mais le SEO local se concentre 
 
 <p>Pour aller plus loin : apprenez à <a href="/blog/referencement-local-praticien-bien-etre-bordeaux">booster votre référencement local à Bordeaux</a> et à <a href="/blog/google-business-praticien-bien-etre-gironde">optimiser votre fiche Google Business</a> pour apparaître dans le pack local.</p>
 
-<p><a href="https://digital-web33.fr/contact">Contactez Digital-web33</a> pour discuter de votre projet et obtenir un devis personnalisé. Site clé en main pour praticiens bien-être en Gironde et partout en France.</p>
+<p><a href="/#contact">Contactez Digital-web33</a> pour discuter de votre projet et obtenir un devis personnalisé. Site clé en main pour praticiens bien-être en Gironde et partout en France.</p>
     `,
   },
   {
@@ -487,7 +487,7 @@ Les posts ont un impact indirect : ils signalent à Google que votre fiche est a
 
 <p>Google Business seul ne suffit pas : découvrez <a href="/blog/referencement-local-praticien-bien-etre-bordeaux">le guide complet du référencement local pour praticiens</a> et pourquoi <a href="/blog/site-web-sophrologue-hypnotherapeute-bordeaux">un site web professionnel est indispensable</a> pour convertir vos visiteurs en clients.</p>
 
-<p><a href="https://digital-web33.fr/contact">Contactez Digital-web33</a> pour la configuration et l'optimisation de votre Google Business Profile, inclus dans chaque création de site web pour praticiens en Gironde.</p>
+<p><a href="/#contact">Contactez Digital-web33</a> pour la configuration et l'optimisation de votre Google Business Profile, inclus dans chaque création de site web pour praticiens en Gironde.</p>
     `,
   },
   {
@@ -698,7 +698,7 @@ Les premiers résultats SEO local apparaissent généralement dans les 2 à 4 mo
 
 <p>Pour aller plus loin : lisez <a href="/blog/site-web-sophrologue-hypnotherapeute-bordeaux">ce que doit contenir votre site web de praticien bien-être</a> et comment <a href="/blog/google-business-praticien-bien-etre-gironde">optimiser votre fiche Google Business</a> pour attirer des clients localement.</p>
 
-<p><a href="https://digital-web33.fr/contact">Contactez Digital-web33</a> pour un échange sans engagement sur votre situation et la stratégie la plus adaptée à votre activité en Gironde.</p>
+<p><a href="/#contact">Contactez Digital-web33</a> pour un échange sans engagement sur votre situation et la stratégie la plus adaptée à votre activité en Gironde.</p>
     `,
   },
   {
@@ -1122,7 +1122,7 @@ Un bon positionnement SEO est durable tant que vous maintenez une activité mini
 
 <p>Pour approfondir votre stratégie : découvrez <a href="/blog/referencement-local-praticien-bien-etre-bordeaux">le guide complet du référencement local pour praticiens bien-être à Bordeaux</a>, comment <a href="/blog/google-business-praticien-bien-etre-gironde">optimiser votre fiche Google Business en Gironde</a> et <a href="/blog/site-web-sophrologue-hypnotherapeute-bordeaux">ce que doit contenir votre site web pour convertir vos visiteurs</a>.</p>
 
-<p><a href="/contact">Contactez Digital-web33</a> pour un audit gratuit de votre visibilité en ligne — site, fiche Google, mots-clés — et une estimation précise des délais selon votre ville et votre spécialité en Gironde.</p>
+<p><a href="/#contact">Contactez Digital-web33</a> pour un audit gratuit de votre visibilité en ligne — site, fiche Google, mots-clés — et une estimation précise des délais selon votre ville et votre spécialité en Gironde.</p>
     `,
   },
 ];

@@ -12,6 +12,19 @@ const BlogPost = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
 
+  const handleContentClick = (e: React.MouseEvent) => {
+    const link = (e.target as HTMLElement).closest("a");
+    if (!link) return;
+    const href = link.getAttribute("href") ?? "";
+    if (href === "/#contact" || href === "/contact" || href.endsWith("/contact")) {
+      e.preventDefault();
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+      }, 150);
+    }
+  };
+
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
@@ -136,6 +149,7 @@ const BlogPost = () => {
               prose-li:mb-2
               prose-strong:text-foreground prose-strong:font-semibold
               prose-a:text-primary prose-a:no-underline hover:prose-a:underline"
+            onClick={handleContentClick}
             dangerouslySetInnerHTML={{ __html: enhancedContent }}
           />
 
